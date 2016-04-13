@@ -1,0 +1,106 @@
+/*  SETTINGS (device specific etc)  */
+
+    html, body { -webkit-text-size-adjust: none; }
+    *, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+    :focus { outline: none; }
+
+
+/*  GLOBALS  */
+
+    html, body { margin: 0; padding: 0; background: #fff; font-size: 16px; font-family: Arial, Helvetica, sans-serif; line-height: 1.4em; color: #000; }
+    input, select, textarea { font-size: 95%; font-family: Arial, Helvetica, sans-serif; }
+    a { color: #30a8ef; text-decoration: none; }
+    .clr { width: 100%; height: 0px; clear: both; display: block; }
+    .grey { background: #fff; color: #666; }
+    .light-grey { background: #fff; color: #b0b0b0;}
+    .blue { background: #30a8ef; color: #fff; }
+
+
+/*  HEADER  */
+
+    #header { width: 100%; background: #fff; position: relative; z-index: 100000; }
+        #header .drop { display: none; }
+        #header .lang {width: 100%; line-height: 20px; padding: 9px 24px; display: block; background: #fff; color: #666; }
+            #header .lang .divider { color: #b0b0b0; }
+            #header .lang a {color: #30a8ef; font-weight: normal; }
+
+        #header .site-title { margin: 0; padding: 0; background-color: #30a8ef; }
+            #header .site-title div { margin: 0; padding: 24px 24px; line-height: 32px; font-size: 200%; font-weight: bold; }
+            #header .site-title a { color: #fff; }
+
+/*  BANNER  */
+
+    #banner { padding: 0; margin: 0 0 3px 0; position: relative; z-index: 1; }
+        #banner img { width: 100%; display: block; }
+
+
+/*  CONTENT  */
+
+    #content { background: #fff; position: relative; }
+
+        /* Frequently Used */
+        .h1,
+        .pagination { line-height: 24px; margin: 0; padding: 14px 24px; font-weight: bold; background: #30a8ef; color: #fff; }
+        .listing { min-height: 45px; border-bottom: solid 1px #e4e4e4; }
+        .pagination { border-bottom: solid 1px #e4e4e4;}
+            .pagination span { color: #b0b0b0; }
+        .align-right { float:right; }
+
+        /* Articles */
+        .articles { padding: 0; margin: 0; }
+            .articles .listing { padding: 24px 24px; }
+            .articles .more,
+            .articles .back { padding: 14px 24px; background: #f5f5f5; }
+                .articles .listing img { width: 40%; float: left; margin: 3px 18px 0 0; display: block; }
+                .articles .full-image img { width: 100%; margin: 14px 0 14px 0; float: none; display: block; }
+                .articles .listing .h2 { margin: 0; padding: 0; color: #000;  }
+                .articles .article { padding: 14px 24px;}
+                .articles .article .h2 { font-weight: bold; font-size: 125%; line-height: 28px; margin-bottom: 16px; }
+                .articles .article .meta { font-weight: bold;}
+                .articles .article pre {
+                    word-break: break-all; /* webkit */
+                    word-wrap: break-word;
+                    white-space: pre;
+                    white-space: -moz-pre-wrap; /* fennec */
+                    white-space: pre-wrap;
+                    white-space: pre\9; /* IE7+ */
+                }
+                .articles .article img { width: 100%; margin: 24px 0; display: block; }
+
+        .banner { padding: 0; margin: 0; }
+            .banner img { width: 100%; padding: 0; margin: 0; display: block; }
+
+
+/*  FOOTER  */
+
+    #footer { padding: 24px; position: relative; }
+
+
+/*  RETINA (because it's nice when you work on something that looks good)  */
+
+    @media
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (   min--moz-device-pixel-ratio: 2),
+        only screen and (     -o-min-device-pixel-ratio: 2/1),
+        only screen and (        min-device-pixel-ratio: 2),
+        only screen and (                min-resolution: 192dpi),
+        only screen and (                min-resolution: 2dppx)
+    {
+
+        /* header */
+        /*#header a.logo { background: url('../img/logo_x2.png') no-repeat; background-size: 197px 46px; }*/
+
+    }
+
+
+/* PREVIEW: Mobile "preview" for large screens */
+
+    @media screen and (min-width: 1024px) {
+        html {
+            background-color: #333;
+        }
+        body {
+            max-width: 320px;
+            margin: 0 auto;
+        }
+    }
