@@ -2,7 +2,7 @@ from datetime import datetime
 from pyramid import testing
 
 from cms.tests.base import UnicoreTestCase
-from unicorecmsmariestopes import main
+from unicorecmsecd import main
 from unicore.content.models import Page, Localisation, Category
 
 

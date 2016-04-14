@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cp -a unicore-cms-mariestopes ./build/
+cp -a unicore-cms-ecd ./build/

@@ -15,16 +15,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Default: Latest
-#: unicorecmsmariestopes/templates/home.pt:33
+#: unicorecmsecd/templates/home.pt:33
 msgid "Latest"
 msgstr ""
 
 #. Default: More
-#: unicorecmsmariestopes/templates/home.pt:78
+#: unicorecmsecd/templates/home.pt:78
 msgid "More"
 msgstr ""
 
 #. Default: Home
-#: unicorecmsmariestopes/templates/base.pt:52
+#: unicorecmsecd/templates/base.pt:52
 msgid "Home"
 msgstr ""

@@ -6,14 +6,14 @@
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       metal:define-macro="layout"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-      i18n:domain="unicorecmsmariestopes">
+      i18n:domain="unicorecmsecd">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="shortcut icon" type="image/x-icon" href="${request.static_url('cms:static/img/favicon.ico')}" />
     <title i18n:translate="My Family">My Family</title>
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
     <meta name="description" content="" />
-    <meta name="keywords" content="mariestopes" />
+    <meta name="keywords" content="ecd" />
     <link href="${request.static_url('cms:static/css/style.css')}" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" media="screen and (min-width: 20em)" href="${request.static_url('cms:static/css/super.css')}" rel="stylesheet" type="text/css">
 </head>
