@@ -1,19 +1,19 @@
 #!/bin/bash
 find . -name '*.mo' -delete
-mkdir -p unicorecmsmariestopes/locale
+mkdir -p unicorecmsecd/locale
 
-pot-create -o unicorecmsmariestopes/locale/unicorecmsmariestopes.pot unicorecmsmariestopes/
+pot-create -o unicorecmsecd/locale/unicorecmsecd.pot unicorecmsecd/
 
 declare -a arr=("eng_GB")
 
 for lang in "${arr[@]}"
 do
-    mkdir -p "unicorecmsmariestopes/locale/""$lang""/LC_MESSAGES"
+    mkdir -p "unicorecmsecd/locale/""$lang""/LC_MESSAGES"
 
-    if [ ! -f "unicorecmsmariestopes/locale/""$lang""/LC_MESSAGES/unicorecmsmariestopes.po" ]; then
-        msginit -l $lang -i unicorecmsmariestopes/locale/unicorecmsmariestopes.pot -o unicorecmsmariestopes/locale/$lang/LC_MESSAGES/unicorecmsmariestopes.po
+    if [ ! -f "unicorecmsecd/locale/""$lang""/LC_MESSAGES/unicorecmsecd.po" ]; then
+        msginit -l $lang -i unicorecmsecd/locale/unicorecmsecd.pot -o unicorecmsecd/locale/$lang/LC_MESSAGES/unicorecmsecd.po
     fi
 
-    msgmerge --update unicorecmsmariestopes/locale/$lang/LC_MESSAGES/unicorecmsmariestopes.po unicorecmsmariestopes/locale/unicorecmsmariestopes.pot
-    msgfmt unicorecmsmariestopes/locale/$lang/LC_MESSAGES/*.po -o unicorecmsmariestopes/locale/$lang/LC_MESSAGES/unicorecmsmariestopes.mo
+    msgmerge --update unicorecmsecd/locale/$lang/LC_MESSAGES/unicorecmsecd.po unicorecmsecd/locale/unicorecmsecd.pot
+    msgfmt unicorecmsecd/locale/$lang/LC_MESSAGES/*.po -o unicorecmsecd/locale/$lang/LC_MESSAGES/unicorecmsecd.mo
 done
