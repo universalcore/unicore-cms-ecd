@@ -1,0 +1,44 @@
+#
+# Language eng translations for PACKAGE package
+# This file is distributed under the same license as the PACKAGE package.
+# Saeed Marzban <saeed@praekeltfoundation.org>, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE 1.0\n"
+"POT-Creation-Date: 2016-04-18 09:33+0200\n"
+"PO-Revision-Date: 2016-04-18 09:33+0200\n"
+"Last-Translator: Saeed Marzban <saeed@praekeltfoundation.org>\n"
+"Language-Team: Language eng\n"
+"Language: eng_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Lingua 4.9\n"
+
+#: unicorecmsecd/templates/404.pt:5
+msgid "We can't find that page, sorry."
+msgstr ""
+
+#. Default: Early Life Tips!
+#: unicorecmsecd/templates/base.pt:13 unicorecmsecd/templates/base.pt:37
+#: unicorecmsecd/templates/base.pt:47
+msgid "Early Life Tips!"
+msgstr ""
+
+#. Default: About Early Life Tips!
+#: unicorecmsecd/templates/base.pt:48
+msgid "About Early Life Tips!"
+msgstr ""
+
+#: unicorecmsecd/templates/home.pt:7 unicorecmsecd/templates/home.pt:8
+msgid "Sex + You banner"
+msgstr ""
+
+#. Used in sentence: "<dynamic element>"
+#: unicorecmsecd/templates/home.pt:27
+msgid "Read more stories"
+msgstr ""
+
+#: unicorecmsecd/templates/home.pt:26
+msgid "<dynamic element>"
+msgstr ""
